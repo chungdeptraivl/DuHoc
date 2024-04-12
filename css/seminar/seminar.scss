@@ -1,0 +1,285 @@
+.seminar {
+    padding: 16px 0;
+    background-color: #f6f9ff;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 64px;
+
+        span::after {
+            content: "";
+            position: absolute;
+            width: 58px;
+            height: 2px;
+            background-color: #f8a162;
+        }
+
+        .seminar-heading {
+            margin-left: 58px;
+            font-size: 32px;
+            font-weight: 600px;
+            color: #1a497f;
+            line-height: 40px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .seminar-content {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+            flex-direction: column;
+
+            .seminar-content-item {
+                padding: 32px 64px;
+                width: 80%;
+            }
+        }
+
+        
+    }
+
+    &-desc {
+        padding: 26px 64px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #5694dc;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 0 64px;
+
+        &-item {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 16px;
+            background-color: #fff;
+            box-shadow: 0px 2px 16px 0px rgba(5, 8, 78, 0.06);
+
+            .card-header,
+            .card-content,
+            .event-content {
+                flex: 1;
+            }
+
+            .card-header {
+                &-heading {
+                    margin-bottom: 16px;
+                    font-style: 16px;
+                    font-weight: 600px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 58px;
+                    height: 2px;
+                    background: #e6ecfa;
+                }
+            }
+
+            .card-content {
+                width: 100%;
+                margin: 32px 0 0 0;
+
+                &-img {
+                    width: 100%;
+                }
+
+                &-body {
+                    padding: 0 16px;
+
+                    .title {
+                        padding: 16px 0;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+
+                    .footer {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        gap: 42px;
+                        color: #102e50;
+
+                        .location {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                    }
+                }
+            }
+
+            .event-content {
+                width: 100%;
+                margin: 32px 0 0 0;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 14px;
+                color: #102e50;
+
+                .event-item {
+                    padding: 16px;
+
+                    .title {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+                    }
+
+                    .footer {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        gap: 42px;
+                        color: #102e50;
+
+                        .location {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                    }
+                }
+                hr {
+                    width: 100%;
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .seminar-content {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 0 64px;
+
+            &-item {
+                width: 50%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 16px;
+                background-color: #fff;
+                box-shadow: 0px 2px 16px 0px rgba(5, 8, 78, 0.06);
+
+                .card-header,
+                .card-content,
+                .event-content {
+                    flex: 1;
+                }
+
+                // Các phần tử bên trong .card-header
+                .card-header {
+                    &-heading {
+                        margin-bottom: 16px;
+                        font-style: 16px;
+                        font-weight: 600px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 58px;
+                        height: 2px;
+                        background: #e6ecfa;
+                    }
+                }
+
+                // Các phần tử bên trong .card-content
+                .card-content {
+                    width: 100%;
+                    margin: 32px 0 0 0;
+
+                    &-img {
+                        width: 100%;
+                    }
+
+                    &-body {
+                        padding: 0 16px;
+
+                        .title {
+                            padding: 16px 0;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                        }
+
+                        .footer {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            gap: 42px;
+                            color: #102e50;
+
+                            .location {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                            }
+                        }
+                    }
+                }
+
+                // Các phần tử bên trong .event-content
+                .event-content {
+                    width: 100%;
+                    margin: 32px 0 0 0;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 14px;
+                    color: #102e50;
+
+                    .event-item {
+                        padding: 16px;
+
+                        .title {
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            margin-bottom: 16px;
+                        }
+
+                        .footer {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            gap: 42px;
+                            color: #102e50;
+
+                            .location {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                            }
+                        }
+                    }
+
+                    hr {
+                        width: 100%;
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

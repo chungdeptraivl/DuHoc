@@ -1,0 +1,47 @@
+.partner {
+    padding: 32px 0;
+    background-color: #fff;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 64px;
+
+        span::after {
+            content: "";
+            position: absolute;
+            width: 58px;
+            height: 2px;
+            background-color: #f8a162;
+        }
+
+        .partner-heading {
+            margin-left: 58px;
+            font-size: 32px;
+            font-weight: 600px;
+            color: #1a497f;
+            line-height: 40px;
+        }
+    }
+
+    &-desc {
+        padding: 26px 64px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #5694dc;
+    }
+
+    .partner-body {
+        padding: 32px 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &-item {
+            padding: 32px 0;
+            width: 16%;
+        }
+    }
+}

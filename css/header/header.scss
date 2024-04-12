@@ -1,0 +1,180 @@
+// color
+$blue-700: #1a497f;
+$orange-700: #f58432;
+
+// font
+$montserrat: "Montserrat";
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    padding: 36px 0;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+    @media (max-width: 1366px) {
+        .header-container {
+            display: flex;
+            align-items: center;
+
+            .header-menu {
+                opacity: 0;
+                visibility: hidden;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                background-color: #fff;
+                padding: 16px;
+                position: absolute;
+                top: 115px;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                transition:
+                    opacity 0.3s ease,
+                    visibility 0.3s ease;
+
+                .header-menu-item {
+                    width: 45%;
+                }
+
+                .menu-item-active::before {
+                    width: 100%;
+                }
+            }
+
+            .header-menu.show-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .change-lang {
+                margin-right: 5rem;
+                margin-left: auto;
+
+                .header-toggle {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &-logo {
+        margin-left: 2rem;
+    }
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        list-style: none;
+
+        &-item {
+            position: relative;
+            padding: 12px 6px;
+            line-height: 18px;
+            color: $blue-700;
+            cursor: pointer;
+            font {
+                family: $montserrat;
+                size: 13px;
+                weight: 500;
+            }
+
+            &:hover {
+                color: #081c32;
+            }
+        }
+    }
+
+    .menu-item-active {
+        color: $blue-700;
+        font-weight: 700;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 80px;
+            height: 4px;
+            transform: translateX(-50%);
+            background-color: $orange-700;
+            border-radius: 1rem;
+        }
+    }
+
+    .change-lang {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .header-language {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+            gap: 2px;
+            cursor: pointer;
+        }
+
+        .header-language span {
+            font-weight: 600;
+            color: #1a497f;
+        }
+
+        #enLanguage {
+            opacity: 0;
+            transition:
+                opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+        }
+
+        #enLanguage.show {
+            opacity: 1;
+            transform: translateX(-100%);
+        }
+
+        #vnLanguage {
+            opacity: 1;
+        }
+
+        #vnLanguage.hide {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .header-toggle {
+            position: relative;
+            display: none;
+            padding: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: #1a497f;
+            }
+
+            &:hover {
+                padding: 19px;
+                border: 1px solid #1a497f;
+            }
+        }
+    }
+}

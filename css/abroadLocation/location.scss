@@ -1,0 +1,140 @@
+.abroad-location {
+    padding: 32px 0px;
+    background-color: #fff;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 64px;
+
+        span::after {
+            content: "";
+            position: absolute;
+            width: 58px;
+            height: 2px;
+            background-color: #f8a162;
+        }
+
+        .abroad-location-heading {
+            margin-left: 58px;
+            font-size: 32px;
+            font-weight: 600px;
+            color: #1a497f;
+            line-height: 40px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .container {
+            .location-content {
+                gap: 64px;
+
+                .card {
+                    width: 80%;
+                    margin: auto;
+
+                    &-body {
+                        padding: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    .location-content {
+        margin-top: 34px;
+        padding: 0 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .card {
+            padding: 16px 6px;
+            width: 48%;
+            background-color: #fff;
+            box-shadow: 0px 2px 16px 0px rgba(5, 8, 78, 0.06);
+
+            &-header {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    color: #5694dc;
+                    font-size: 22px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+                &-menu {
+                    margin: 16px 0;
+
+                    .list-country {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 32px;
+                        list-style: none;
+                        border-bottom: 1px solid #e0e6f3;
+
+                        .item-country {
+                            font-size: 14px;
+                            padding: 8px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #1a497f;
+                            }
+                        }
+
+                        .item-country-active {
+                            color: #1a497f;
+                            font-weight: 700;
+                            border-bottom: 2px solid #f8a162;
+                        }
+                    }
+                }
+            }
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+                gap: 16px;
+
+                .title {
+                    color: #1a497f;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .desc {
+                    text-align: justify;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #102e50;
+                }
+
+                .card-img {
+                    margin-top: auto;
+                    width: 100%;
+                }
+
+                .card-list-questions {
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    span {
+                        font-size: 16px;
+                        color: #e0e6f3;
+                        border-radius: 50%;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
