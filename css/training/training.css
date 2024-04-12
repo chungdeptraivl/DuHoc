@@ -8,12 +8,11 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-left: 11%;
+  margin-left: 64px;
 }
 .training .heading span::after {
   content: "";
   position: absolute;
-  left: 11%;
   width: 58px;
   height: 2px;
   background-color: #f8a162;

@@ -277,9 +277,11 @@
     </section>
 
     <section class="abroad-location container">
-        <div class="heading container">
-            <span></span>
-            <p class="abroad-location-heading">ĐIỂM ĐẾN DU HỌC</p>
+        <div class="container">
+            <div class="heading">
+                <span></span>
+                <p class="abroad-location-heading">ĐIỂM ĐẾN DU HỌC</p>
+            </div>
         </div>
         <div class="container">
             <div class="location-content">
@@ -304,7 +306,8 @@
                             Hoc sinh Atlantic cap ben thanh cong dai hoc top dau Canada...
                         </h6>
                         <p class="desc">
-                            Đã rất lâu rồi những người làm du học như chúng tôi mới có cảm xúc bùng nổ như hôm nay khi 2
+                            Đã rất lâu rồi những người làm du học như chúng tôi mới có cảm xúc bùng nổ như hôm nay
+                            khi 2
                             bạn
                             học sinh của Atlantic đã chính thức cập bến 2 trường TOP thế giới
                         </p>
@@ -349,9 +352,11 @@
                             Du học Canada - Đừng chọn đúng – Hãy chọn thông minh
                         </h6>
                         <p class="desc">
-                            Với sự đa dạng chương trình, Canada còn đào tạo các chương trình mang thiên hướng thực hành
+                            Với sự đa dạng chương trình, Canada còn đào tạo các chương trình mang thiên hướng thực
+                            hành
                             dành
-                            cho các bạn học sinh đã tốt nghiệp Đại học hoặc Cao đẳng trong nước và tìm kiếm cơ hội ..
+                            cho các bạn học sinh đã tốt nghiệp Đại học hoặc Cao đẳng trong nước và tìm kiếm cơ hội
+                            ..
                         </p>
                         <img src="./Image/location/Image.png" alt="" class="card-img">
 
@@ -394,7 +399,8 @@
                             Du học Úc với chi phí thấp nhất năm 2023 – Kent Institute Australia.
                         </h6>
                         <p class="desc">
-                            Cơ hội du học Úc rộng mở tại 3 thành phố lớn với chính sách học bổng tự động và học bổng 30%
+                            Cơ hội du học Úc rộng mở tại 3 thành phố lớn với chính sách học bổng tự động và học bổng
+                            30%
                             tại
                             Kent Institute Australia. Học phí chỉ từ 190 triệu VNĐ/năm cho 3 năm cử nhân!
                         </p>
@@ -441,7 +447,8 @@
                             Đại diện trường Hiroshima, Nhật Bản chính thức ghé thăm văn phòng ..
                         </h6>
                         <p class="desc">
-                            Ngày 15/12/2023, Atlantic Group rất vinh dự được đón tiếp và là Ban tổ chức chính thức tiếp
+                            Ngày 15/12/2023, Atlantic Group rất vinh dự được đón tiếp và là Ban tổ chức chính thức
+                            tiếp
                             đón
                             đại diện trường HIROSHIMA UNIVERSITY – TOP ĐẦU NHỮNG TRƯỜNG ĐẠI HỌC CÔNG LẬP ..
                         </p>
@@ -474,9 +481,11 @@
     </section>
 
     <section class="scholarship container">
-        <div class="heading container">
-            <span></span>
-            <p class="scholarship-heading">HỌC BỔNG DU HỌC</p>
+        <div class="container">
+            <div class="heading ">
+                <span></span>
+                <p class="scholarship-heading">HỌC BỔNG DU HỌC</p>
+            </div>
         </div>
         <div class="container">
             <div class="location-content">
@@ -551,10 +560,12 @@
         </div>
     </section>
 
-    <section class="training">
-        <div class="heading">
-            <span></span>
-            <p class="training-heading">CHƯƠNG TRÌNH ĐẠO TẠO</p>
+    <section class="training container">
+        <div class="container">
+            <div class="heading">
+                <span></span>
+                <p class="training-heading">CHƯƠNG TRÌNH ĐẠO TẠO</p>
+            </div>
         </div>
 
         <div class="training-content container">
@@ -968,8 +979,17 @@
     const headerMenu = document.querySelector('.header-menu');
 
     headerToggle.addEventListener('click', () => {
+        headerToggle.classList.toggle('active')
         headerMenu.classList.toggle('show-menu');
     });
+
+    if (headerMenu.classList.contains('show-menu')) {
+        document.addEventListener('click', (event) => {
+            headerToggle.classList.remove('active');
+            headerMenu.classList.remove('show-menu');
+        });
+    }
+
 
 
 </script>

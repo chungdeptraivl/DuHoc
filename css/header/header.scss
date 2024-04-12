@@ -39,6 +39,8 @@ $montserrat: "Montserrat";
                     visibility 0.3s ease;
 
                 .header-menu-item {
+                    cursor: pointer;
+                    padding: 32px 16;
                     width: 45%;
                 }
 
@@ -53,11 +55,19 @@ $montserrat: "Montserrat";
             }
 
             .change-lang {
-                margin-right: 5rem;
+                margin-right: 1rem;
                 margin-left: auto;
 
                 .header-toggle {
                     display: block;
+                }
+
+                .header-toggle.active {
+                    background-color: #1a497f;
+
+                    i {
+                        color: #fff;
+                    }
                 }
             }
         }

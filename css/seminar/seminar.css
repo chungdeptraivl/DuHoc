@@ -41,11 +41,11 @@
   color: #5694dc;
 }
 .seminar-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
   padding: 0 64px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
 }
 .seminar-content-item {
   width: 50%;

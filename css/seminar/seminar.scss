@@ -37,8 +37,6 @@
                 width: 80%;
             }
         }
-
-        
     }
 
     &-desc {
@@ -49,11 +47,11 @@
     }
 
     &-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
         padding: 0 64px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 16px;
 
         &-item {
             width: 50%;

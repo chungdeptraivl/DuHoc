@@ -93,7 +93,7 @@
 .reason-footer .reason-footer-content .text svg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -40%;
 }
 .reason-footer .reason-footer-content .text-content {
   color: #fff;

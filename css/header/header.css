@@ -30,6 +30,8 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .header .header-container .header-menu .header-menu-item {
+    cursor: pointer;
+    padding: 32px 16;
     width: 45%;
   }
   .header .header-container .header-menu .menu-item-active::before {
@@ -40,11 +42,17 @@
     visibility: visible;
   }
   .header .header-container .change-lang {
-    margin-right: 5rem;
+    margin-right: 1rem;
     margin-left: auto;
   }
   .header .header-container .change-lang .header-toggle {
     display: block;
+  }
+  .header .header-container .change-lang .header-toggle.active {
+    background-color: #1a497f;
+  }
+  .header .header-container .change-lang .header-toggle.active i {
+    color: #fff;
   }
 }
 .header-container {
